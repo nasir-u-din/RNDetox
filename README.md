@@ -89,3 +89,15 @@ To learn more about React Native, take a look at the following resources:
 # detox test --configuration android.emu.debug
 
 
+# How to Debug
+# Step 1
+# describe('Example', () => {
+#   beforeAll(async () => {
+#     await device.launchApp();
+# +    debugger;
+#  });
+
+# Step 2
+
+# detox test --inspect-brk -c android.emu.debug e2e/starter.test.js
+
